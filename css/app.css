@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/********** 全局样式设置 **********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#map_container {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "microsoft yahei", arial, sans-serif;
+    background-color: #0a4044;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/********** 整体外观 **********/
+.header {
+    position: relative;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+.header-title {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: #fcf634;
+}
+
+.wrapper {
+    position: absolute;
+    top: 2%;
+    bottom: 1%;
+    left: 1%;
+    right: 1%;
+    padding: 2% 0 0 0;
+    background: url("../img/dashboard_backgroud.png") no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
+/********** 各部分样式设置 **********/
+.content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1% 1%;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.col {
+    margin: 0 1%;
+    height: 100%;
+}
+
+.col-l {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2
+}
+
+.col-c {
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+
+.col-r {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.xpanel-wrapper {
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+.xpanel-wrapper-10 {
+    height: 7%;
+    margin-top: 1%;
+}
+
+.xpanel-wrapper-40 {
+    height: 40%;
+}
+
+.xpanel-wrapper-60 {
+    height: 60%;
+}
+
+.xpanel-wrapper-80 {
+    height: 95%;
+}
+
+.xpanel {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
+.sheet {
+    display: inline-block;
+    height: 100%;
+    width: 32.5%;
+}
+
+/* 设置三个sheet窗口的初始展示格式 */
+.sheet_window {
+    height: 33%;
+}
+
+
+/* 背景图片设置 */
+.xpanel-l-t {
+    background-image: url("../img/content_backgroud.png");
+}
+
+.xpanel-l-b {
+    background-image: url("../img/content_backgroud.png");
+}
+
+.xpanel-c-b {
+    background-image: url("../img/content_backgroud.png");
+}
+
+.xpanel-r-t {
+    background-image: url("../img/content_backgroud.png");
+}
+
+.xpanel-r-m {
+    background-image: url("../img/content_backgroud.png");
+}
+
+.xpanel-r-b {
+    background-image: url("../img/content_backgroud.png");
+}
+
+.xpanel .title {
+    padding-left: 2vh;
+    padding-top: 0.5vh;
+    height: 4vh;
+    line-height: 100%;
+    font-size: 1.3vw;
+    font-weight: normal;
+    color: #0f0;
+    background-image: url("../img/title_backgroud.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.xpanel .title-long {
+    background-image: url("../img/title_backgroud.png");
+}
+
+/* scrollbar 隐藏滚动条*/
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}

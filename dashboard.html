@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>风险可视化分析平台</title>
+		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/vue.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1 class="header-title">{{ titleName }}</h1>
+		</div>
+		<div class="wrapper">
+			<div class="content">
+				<div class="col col-l">
+					<div class="xpanel-wrapper xpanel-wrapper-40">
+						<div class="xpanel xpanel-l-t">
+							<div class="title">风险源监控模块</div>
+						</div>
+					</div>
+					<div class="xpanel-wrapper xpanel-wrapper-60">
+						<div class="xpanel xpanel-l-b">
+							<div class="title">社区环境感知模块</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-c" id="center_app">
+					<div class="xpanel-wrapper xpanel-wrapper-80">
+						<div class="xpanel xpanel-c-b">
+							<div class="map_container sheet_window" id="sheel1_window" v-show="sheet2IsNotShowValue & sheet3IsNotShowValue">sheet one<br />
+								<button id="sheet1Test" @click="sheet1Test">sheet1Test</button>
+							</div>
+							<div class="map_container sheet_window" id="sheet2_window"  v-show="sheet1IsNotShowValue & sheet3IsNotShowValue">sheet tow<br />
+								<button id="sheet2Test" @click="sheet2Test">sheet2Test</button>
+							</div>
+							<div class="map_container sheet_window" id="sheet3_window"  v-show="sheet1IsNotShowValue & sheet2IsNotShowValue">sheet three<br />
+								<button id="sheet3Test" @click="sheet3Test">sheet3Test</button>
+								</div>
+						</div>
+					</div>
+					<div class="xpanel-wrapper xpanel-wrapper-10">
+						<div class="xpanel xpanel-c-b">
+							<button class="sheet title" id="sheel1_control" @click="sheetOneShow">{{ sheetOneControlValue }}</button>
+							<button class="sheet title" id="sheel2_control" @click="sheetTowShow">{{ sheetTowControlValue }}</button>
+							<button class="sheet title" id="sheel3_control" @click="sheetThreeShow">{{ sheetThreeControlValue }}</button>
+						</div>
+					</div>
+				</div>
+				<script src="js/centerAPP.js"></script>
+				<div class="col col-r">
+					<div class="xpanel-wrapper xpanel-wrapper-40">
+						<div class="xpanel xpanel-r-t">
+							<div class="title">静态信息模块</div>
+						</div>
+					</div>
+					<div class="xpanel-wrapper xpanel-wrapper-60">
+						<div class="xpanel xpanel-r-b">
+							<div class="title">场景提示模块</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
